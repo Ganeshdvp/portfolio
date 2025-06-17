@@ -14,16 +14,6 @@
     animation: fade-in 2.5s ease-in-out forwards;
 }
 
-/* Carousel Styling */
-#practicesCarousel {
-  overflow: hidden;
-  position: relative;
-}
-
-#carouselInner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
 /* Arrow Buttons */
 #prevArrow,
 #nextArrow {
@@ -67,3 +57,5 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+

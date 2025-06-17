@@ -15,11 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
   <body class="bg-black">
-    
+
+    <!-- navbar -->
     <nav
-      class="bg-transparent fixed top-10 left-0 w-full flex justify-between items-center px-8 h-20 z-50"
+      class="bg-transparent w-full flex justify-between items-center py-16 px-8 h-20 z-50"
     >
-      <a href="/"><h1 class="text-4xl text-red-500 ms-32" style="font-family: 'Irish Grover', cursive;">Ganesh</h1></a>
+      <a href="#"><h1 class="text-4xl text-red-500 ms-32" style="font-family: 'Irish Grover', cursive;">Ganesh</h1></a>
       <div class="flex items-center gap-8">
         <ul class="flex items-center text-md gap-8 text-white" style="font-family: Arvo;">
           <a href="#"
@@ -57,20 +58,10 @@
               Contact
             </li></a
           >
-          <div class="relative ml-4">
-            <input
-              type="search"
-              name=""
-              id="search"
-              placeholder="Search here"
-              class="rounded-[20px] px-10 py-1 bg-red-700 text-white hover:brightness-150 hover:shadow-[0_0_10px_3px_rgba(255,0,0,0.8)] focus:outline-none focus:ring-1 focus:ring-red-400 w-40"
-            />
-            <span
-              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-white"
-            >
-              <svg
+          <div class="relative ml-4 flex rounded-[20px] px-3 bg-red-700 text-white hover:brightness-150 hover:shadow-[0_0_10px_3px_rgba(255,0,0,0.8)] focus:outline-none focus:ring-1 focus:ring-red-400 w-40">
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="h-5 w-5 mt-1.5 me-1 opacity-70"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -82,25 +73,31 @@
                   d="M11 4a7 7 0 100 14 7 7 0 000-14zm10 16l-4-4"
                 />
               </svg>
-            </span>
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="Search here"
+              class="text-white text-sm w-28 h-8 focus:outline-none rounded-[20px]"
+            />
           </div>
         </ul>
         <div class="relative me-32 -ml-4">
           <button
             id="themeToggle"
-            class="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center hover:bg-gray-700"
+            class="w-10 h-10 bg-gray-700 text-white rounded-full flex items-center justify-center hover:bg-red-700 cursor-pointer"
           >
             ☀️
           </button>
           <div
             id="dropdown"
-            class="hidden absolute right-0 mt-2 w-40 bg-white rounded shadow-lg"
+            class="hidden absolute right-0 mt-2 w-40 bg-red-600 rounded shadow-lg z-50"
           >
-            <ul class="text-black">
-              <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+            <ul class="text-white">
+              <li class="px-4 py-2 hover:bg-red-700 cursor-pointer">
                 Light Mode
               </li>
-              <li class="px-4 py-2 hover:bg-gray-200 cursor-pointer">
+              <li class="px-4 py-2 hover:bg-red-700 cursor-pointer">
                 Dark Mode
               </li>
             </ul>
@@ -113,7 +110,7 @@
       <!-- hero section -->
       <section
         id="hero-page"
-        class="flex items-center justify-center px-8 mt-35 ms-32 relative"
+        class="flex items-center justify-center -mt-14 px-8 ms-32 relative"
       >
       <img
       src="./Images/effectThing.png"
@@ -195,9 +192,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-15 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
           />
-            <h2 class="text-2xl text-white mb-12 ms-12" style="font-family: Irish Grover;">About Me</h2>
+            <h2 class="text-2xl text-white mb-8 ms-12" style="font-family: Irish Grover;">About Me</h2>
             <p class="text-md text-gray-400 leading-snug" >
               I am a Front-End Developer with a passion for creating visually
               appealing and user-friendly web applications. My expertise lies in
@@ -306,9 +303,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-14 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
           />
-            <h2 class="text-2xl text-white mb-10 ms-12" style="font-family: Irish Grover;">Experience</h2>
+            <h2 class="text-2xl text-white mb-8 ms-12" style="font-family: Irish Grover;">Experience</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               Iam currently pursuing an Internship as a FrontEnd Developer at TalentForge company. and Also I achieve some knowledge and experience through my personal projects. My focus is on writing
               clean, maintainable code and ensuring performance optimization.
@@ -334,7 +331,7 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-13 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
           />
             <h2 class="text-2xl text-white mb-10 ms-12" style="font-family: Irish Grover;">My Projects</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
@@ -363,9 +360,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
           />
-            <h2 class="text-2xl text-white mb-12 ms-12" style="font-family: Irish Grover;">My Vision</h2>
+            <h2 class="text-2xl text-white mb-10 ms-12" style="font-family: Irish Grover;">My Vision</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               My vision is to create impactful digital experiences that inspire
               and engage users. I aim to continuously learn and grow as a
@@ -392,9 +389,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
           />
-            <h2 class="text-2xl text-white mb-12 ms-12" style="font-family: Irish Grover;">My Goals</h2>
+            <h2 class="text-2xl text-white mb-9 ms-12" style="font-family: Irish Grover;">My Goals</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               My goal is to contribute to innovative projects that make a
               difference. I strive to build scalable and efficient solutions
@@ -746,92 +743,6 @@
         </div>
       </section>
 
-      <!-- practices section -->
-      <section id="practices" class="px-90 py-16 bg-black relative">
-        <!-- Section Heading -->
-        <h2 class="text-4xl font-bold text-white mb-4 text-center">My Practices</h2>
-        <div class="w-24 h-1 bg-red-500 mx-auto mb-28"></div>
-      
-        <!-- Carousel Container -->
-        <div class="relative" data-aos="fade-in">
-          <!-- Left Arrow -->
-          <button
-            id="prevArrow"
-            class="absolute top-1/2 -left-20 transform -translate-y-1/2 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-red-700 z-10"
-          >
-            &#8592;
-          </button>
-      
-          <!-- Practices Wrapper -->
-          <div id="practicesCarousel" class="flex overflow-hidden">
-            <div class="flex transition-transform duration-500 ease-in-out" id="carouselInner">
-              <!-- Practice 1 -->
-              <div class="w-[300px] px-4">
-                <div class="group relative bg-gray-900 rounded-3xl overflow-hidden transform transition duration-500 hover:-translate-y-2">
-                  <img src="./Images/practice1.png" alt="Practice 1" class="w-full h-48 object-cover" />
-                  <div class="p-4 flex">
-                    <h3 class="text-xl font-bold text-white mb-2">DSA Practices</h3>
-                    <a href="https://github.com/Ganeshdvp/DSA-PRACTICES"><p class="text-gray-500 text-sm mt-16 ms-26 hover:text-red-900">Github</p></a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Practice 2 -->
-              <div class="w-[300px] px-4">
-                <div class="group relative bg-gray-900 rounded-3xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2">
-                  <img src="./Images/practice1.png" alt="Practice 2" class="w-full h-48 object-cover" />
-                  <div class="p-4 flex">
-                    <h3 class="text-xl font-bold text-white mb-2">Local and Session Storage</h3>
-                    <a href="https://github.com/Ganeshdvp/local-and-session-storage-example"><p class="text-gray-500 text-sm mt-16 hover:text-red-900">Github</p></a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Practice 3 -->
-              <div class="w-[300px] px-4">
-                <div class="group relative bg-gray-900 rounded-3xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2">
-                  <img src="./Images/practice3.png" alt="Practice 3" class="w-full h-48 object-cover" />
-                  <div class="p-4 flex">
-                    <h3 class="text-xl font-bold text-white mb-2">Practice 3</h3>
-                    <a href="/"><p class="text-gray-500 text-sm mt-16 hover:text-red-900">Github</p></a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Practice 4 -->
-              <div class="w-[300px] px-4">
-                <div class="group relative bg-gray-900 rounded-3xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2">
-                  <img src="./Images/practice4.png" alt="Practice 4" class="w-full h-48 object-cover" />
-                  <div class="p-4 flex">
-                    <h3 class="text-xl font-bold text-white mb-2">Practice 4</h3>
-                    <a href="/"><p class="text-gray-500 text-sm mt-16 hover:text-red-900">Github</p></a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Practice 5 -->
-              <div class="w-[300px] px-4">
-                <div class="group relative bg-gray-900 rounded-3xl shadow-lg overflow-hidden transform transition duration-500 hover:-translate-y-2">
-                  <img src="./Images/practice5.png" alt="Practice 5" class="w-full h-48 object-cover" />
-                  <div class="p-4 flex">
-                    <h3 class="text-xl font-bold text-white mb-2">Practice 5</h3>
-                    <a href="/"><p class="text-gray-500 text-sm mt-16 hover:text-red-900">Github</p></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Right Arrow -->
-          <button
-            id="nextArrow"
-            class="absolute top-1/2 -right-20 transform -translate-y-1/2 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-red-700 z-10"
-          >
-            &#8594;
-          </button>
-        </div>
-      </section>
-
       <!-- Resume Section -->
       <section id="resume" class="px-40 py-16">
         <!-- Section Heading -->
@@ -869,7 +780,7 @@
               projects.
             </p>
             <a
-              href="./public/Ganesh-Frontend-Resume-1.pdf"
+              href="./public/Ganesh_Frontend_Resume.pdf"
               download
               class="px-8 py-3 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 hover:shadow-[0_0_15px_3px_rgba(255,0,0,0.8)] transition duration-300 ease-in-out"
             >
