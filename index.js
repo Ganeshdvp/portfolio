@@ -24,6 +24,20 @@ function toggleDropdown(button) {
   dropdown.classList.toggle("hidden");
 }
 
+// themes
+function switchToggle(mode){
+  if(mode === 'light'){
+    body.classList.remove("dark");
+    body.classList.add("light");
+    dropdown.classList.toggle("hidden");
+  }
+  else if(mode === 'dark'){
+    body.classList.remove("light");
+    body.classList.add("dark");
+    dropdown.classList.toggle("hidden");
+  }
+}
+
 // Typing Effect
 const typingElement = document.getElementById("typing");
 const skills = [
@@ -168,4 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
 

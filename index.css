@@ -59,3 +59,50 @@
 }
 
 
+/* themes */
+body.light {
+  background: #ffffff; /* Light background */
+  color: #333; /* Dark text */
+  --tags-color : rgb(93, 92, 92);
+  --opacity : 0.08;
+
+  --about-text-color: #000000;
+  --borderLine-filter: invert(1) brightness(0);
+
+  --project-color: #000000;
+  --border-color : #000000;
+  --live-text-color : #000000;
+  --see-more-button-color: #000000;
+
+  --resume-color: #000000;
+
+  --contact-text-color: #000000;
+  --label-color: #000000;
+  --bg-color : #e3e3e3;
+  --text-color : black;
+
+  --connect-text-color: #333;
+}
+
+body.dark {
+  background: #000000; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  --tags-color : white;
+  --opacity : 0.15;
+
+  --about-text-color: #ffffff;
+
+  --project-color: #ffffff;
+    --border-color : #ffffff;
+  --live-text-color : #ffffff;
+  --see-more-button-color: #ffffff;
+
+  --resume-color: #ffffff;
+
+  --contact-text-color: #ffffff;
+  --label-color: #ffffff;
+   --bg-color : #201f1f;
+   --text-color : rgb(255, 255, 255);
+
+  --connect-text-color: #ffffff;
+}

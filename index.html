@@ -14,15 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   </head>
-  <body class="bg-black">
+  <body class="dark">
 
     <!-- navbar -->
     <nav
       class="bg-transparent w-full flex justify-between items-center py-16 px-8 h-20 z-50"
     >
-      <a href="#"><h1 class="text-4xl text-red-500 ms-32" style="font-family: 'Irish Grover', cursive;">Ganesh</h1></a>
+      <a href="#"><h1 class="text-4xl text-red-500 ms-32 light:text-white-300" style="font-family: 'Irish Grover', cursive;">Ganesh</h1></a>
       <div class="flex items-center gap-8">
-        <ul class="flex items-center text-md gap-8 text-white" style="font-family: Arvo;">
+        <ul class="flex items-center text-md gap-8 text-[var(--tags-color)]" style="font-family: Arvo;">
           <a href="#"
             ><li
               class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out"
@@ -94,10 +94,10 @@
             class="hidden absolute right-0 mt-2 w-40 bg-red-600 rounded shadow-lg z-50"
           >
             <ul class="text-white">
-              <li class="px-4 py-2 hover:bg-red-700 cursor-pointer">
+              <li class="px-4 py-2 hover:bg-red-700 cursor-pointer" onclick="switchToggle('light')">
                 Light Mode
               </li>
-              <li class="px-4 py-2 hover:bg-red-700 cursor-pointer">
+              <li class="px-4 py-2 hover:bg-red-700 cursor-pointer" onclick="switchToggle('dark')">
                 Dark Mode
               </li>
             </ul>
@@ -115,7 +115,7 @@
       <img
       src="./Images/effectThing.png"
       alt="Hero Background"
-      class="absolute top-0 left-0 w-full h-full object-cover opacity-15 z-0"
+      class="absolute top-0 left-0 w-full h-full object-cover z-0" style="opacity: var(--opacity);"
     />
         <!-- Left Side: Text Content -->
         <div class="w-1/2 animate-fade-in">
@@ -145,40 +145,40 @@
           <img
             src="./Images/Ellipse 1.png"
             alt="Background"
-            class="absolute w-[350px] h-auto top-[200px] rounded-lg shadow-lg opacity-100 transform scale-110 animate-fade-in"
+            class="absolute w-[350px] h-auto top-[200px] rounded-lg opacity-100 transform scale-110 animate-fade-in"
           />
           <img
             src="./Images/Ellipse 2.png"
             alt="Background"
-            class="absolute w-[50px] h-auto top-[450px] right-[580px] rounded-lg shadow-lg opacity-100 transform scale-110 animate-fade-in"
+            class="absolute w-[50px] h-auto top-[450px] right-[580px] rounded-lg opacity-100 transform scale-110 animate-fade-in"
           />
           <img
             src="./Images/Ellipse 3.png"
             alt="Background"
-            class="absolute w-[20px] h-auto top-[530px] right-[550px] shadow-lg opacity-100 transform scale-110 animate-fade-in"
+            class="absolute w-[20px] h-auto top-[530px] right-[550px] opacity-100 transform scale-110 animate-fade-in"
           />
           <!-- Foreground Image -->
           <img
             src="./Images/homepageimage.png"
             alt="Frontend Developer"
-            class="relative w-[700px] h-auto rounded-lg shadow-lg transform transition duration-1000 ease-in-out hover:scale-105 opacity-100 animate-fade-in"
+            class="relative w-[700px] h-auto rounded-lg transform transition duration-1000 ease-in-out hover:scale-105 opacity-100 animate-fade-in"
           />
         </div>
       </section>
 
       <!-- about section -->
-      <section id="about" class="px-40 py-16 bg-black mt-36 mb-16 relative">
+      <section id="about" class="px-40 py-16 mt-36 mb-16 relative">
         <img
         src="./Images/effectThing.png"
         alt="Hero Background"
-        class="absolute -top-36 -left-[200px] w-full h-[1000px] object-cover opacity-12 z-0"
+        class="absolute -top-36 -left-[200px] w-full h-[1000px] object-cover z-0" style="opacity: var(--opacity);"
       />
         <img
         src="./Images/effectThing.png"
         alt="Hero Background"
-        class="absolute -top-36 left-0 w-full h-[5000px] object-cover opacity-12 z-0"
+        class="absolute -top-36 left-0 w-full h-[5000px] object-cover z-0" style="opacity: var(--opacity);"
       />
-        <h2 class="text-4xl font-bold text-white mb-4 text-center">About Me</h2>
+        <h2 class="text-4xl font-bold text-[var(--about-text-color)] mb-4 text-center">About Me</h2>
         <div class="w-24 h-1 bg-red-500 mx-auto mb-18"></div>
         <!-- Border below heading -->
          
@@ -192,9 +192,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
-            <h2 class="text-2xl text-white mb-8 ms-12" style="font-family: Irish Grover;">About Me</h2>
+            <h2 class="text-2xl text-[var(--about-text-color)] mb-8 ms-12" style="font-family: Irish Grover;">About Me</h2>
             <p class="text-md text-gray-400 leading-snug" >
               I am a Front-End Developer with a passion for creating visually
               appealing and user-friendly web applications. My expertise lies in
@@ -207,7 +207,7 @@
             <img
               src="./Images/about1st.png"
               alt="About Me"
-              class="w-[350px] h-auto rounded-lg shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+              class="w-[350px] h-auto rounded-lg transform transition duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>
@@ -222,9 +222,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
-            <h2 class="text-2xl text-white mb-7 ms-12" style="font-family: Irish Grover;">My Skills</h2>
+            <h2 class="text-2xl text-[var(--about-text-color)] mb-7 ms-12" style="font-family: Irish Grover;">My Skills</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               I specialize in HTML5, CSS3, JavaScript, and frameworks like React
               and Tailwind CSS. I have basic understanding in NodeJS, ExpressJS and MySql. I love solving complex problems and turning
@@ -232,62 +232,62 @@
             </p>
           </div>
           <!-- Left Side: Container with White Border -->
-          <div class="w-1/2 shadow-lg">
+          <div class="w-1/2">
             <div class="flex flex-wrap justify-center w-100 ms-32">
               <img
                 src="./Images/html.png"
                 alt="HTML"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/css.png"
                 alt="CSS"
-                class="w-16 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-16 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/javascript.png"
                 alt="JavaScript"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/react.png"
                 alt="React"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/tailwind.webp"
                 alt="Tailwind CSS"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/mysql.png"
                 alt="MySQL"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/bootstrap.webp"
                 alt="Bootstrap"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/nodejs.webp"
                 alt="Node.js"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/git.webp"
                 alt="Git"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/github.webp"
                 alt="GitHub"
-                class="w-20 h-20 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-20 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/vite.webp"
                 alt="Vite"
-                class="w-20 h-16 object-contain rounded-full shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+                class="w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
             </div>
           </div>
@@ -303,9 +303,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
-            <h2 class="text-2xl text-white mb-8 ms-12" style="font-family: Irish Grover;">Experience</h2>
+            <h2 class="text-2xl text-[var(--about-text-color)] mb-8 ms-12" style="font-family: Irish Grover;">Experience</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               Iam currently pursuing an Internship as a FrontEnd Developer at TalentForge company. and Also I achieve some knowledge and experience through my personal projects. My focus is on writing
               clean, maintainable code and ensuring performance optimization.
@@ -316,7 +316,7 @@
             <img
               src="./Images//experienceimage.png"
               alt="My Experience"
-              class="w-[400px] h-auto rounded-lg shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+              class="w-[400px] h-auto rounded-lg transform transition duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>
@@ -331,9 +331,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-13 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-13 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
-            <h2 class="text-2xl text-white mb-10 ms-12" style="font-family: Irish Grover;">My Projects</h2>
+            <h2 class="text-2xl text-[var(--about-text-color)] mb-10 ms-12" style="font-family: Irish Grover;">My Projects</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               I have built various projects, including Crypto currency tracking,
               portfolio websites, Interactive websites and Gemini Ai clone. Each project
@@ -345,7 +345,7 @@
             <img
               src="./Images//projects.png"
               alt="My Projects"
-              class="w-[400px] h-auto rounded-lg shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+              class="w-[400px] h-auto rounded-lg transform transition duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>
@@ -360,9 +360,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
-            <h2 class="text-2xl text-white mb-10 ms-12" style="font-family: Irish Grover;">My Vision</h2>
+            <h2 class="text-2xl text-[var(--about-text-color)] mb-10 ms-12" style="font-family: Irish Grover;">My Vision</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               My vision is to create impactful digital experiences that inspire
               and engage users. I aim to continuously learn and grow as a
@@ -374,7 +374,7 @@
             <img
               src="./Images/visionimage.png"
               alt="My Vision"
-              class="w-[400px] h-auto rounded-lg shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+              class="w-[400px] h-auto rounded-lg transform transition duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>
@@ -389,9 +389,9 @@
             <img
             src="./Images/borderLine.png"
             alt="Background"
-            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0"
+            class="absolute -top-10 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
-            <h2 class="text-2xl text-white mb-9 ms-12" style="font-family: Irish Grover;">My Goals</h2>
+            <h2 class="text-2xl text-[var(--about-text-color)] mb-9 ms-12" style="font-family: Irish Grover;">My Goals</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
               My goal is to contribute to innovative projects that make a
               difference. I strive to build scalable and efficient solutions
@@ -403,21 +403,21 @@
             <img
               src="./Images//goalimage.png"
               alt="My Goals"
-              class="w-[500px] h-auto bg-transparent rounded-lg shadow-lg transform transition duration-500 ease-in-out hover:scale-105"
+              class="w-[500px] h-auto bg-transparent rounded-lg transform transition duration-500 ease-in-out hover:scale-105"
             />
           </div>
         </div>
       </section>
 
       <!-- projects section -->
-      <section id="projects" class="px-40 py-16 bg-black relative">
+      <section id="projects" class="px-40 py-16 relative">
         <img
           src="./Images/effectThing.png"
           alt="Hero Background"
-          class="absolute -top-[100px] -left-[400px] w-full h-[2000px] object-cover opacity-15 z-0"
+          class="absolute -top-[100px] -left-[400px] w-full h-[2000px] object-cover z-0" style="opacity: var(--opacity);"
         />
         <!-- Section Heading -->
-        <h2 class="text-4xl font-bold text-white mb-4 text-center">My Projects</h2>
+        <h2 class="text-4xl font-bold text-[var(--project-color)] mb-4 text-center">My Projects</h2>
         <div class="w-24 h-1 bg-red-500 mx-auto mb-28"></div>
       
        <div id="visibleProjects">
@@ -432,7 +432,7 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white">
+          <div class="w-full lg:w-1/2 text-[var(--text-color)]">
             <h3 class="text-3xl font-bold mb-4">CryptoTrack</h3>
             <p class="text-gray-400 mb-4">
               It offers a user-friendly interface to view real-time coin prices, track investments, and visualize portfolio performance through charts and graphs. This project utilizes APIs to fetch live data and includes responsive design for seamless usage across devices.
@@ -450,14 +450,14 @@
               <a
                 href="https://cryptotrackweb.netlify.app"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/Crypto-Track"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -476,8 +476,8 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white relative left-20">
-            <h3 class="text-3xl font-bold mb-4">Gemini Clone</h3>
+          <div class="w-full lg:w-1/2 text-[var(--text-color)] relative left-20">
+            <h3 class="text-3xl font-bold mb-4 text-[var(--project-color)]">Gemini Clone</h3>
             <p class="text-gray-400 mb-4">
               A single-page application developed by using Vite tool with React.js. This project aims to create a lightweight, efficient implementation of the Gemini protocol. The Gemini protocol is a simple, text-based protocol designed for efficient and secure access to information over the internet. This repository provides tools for hosting Gemini content and browsing Gemini sites.
             </p>
@@ -493,14 +493,14 @@
               <a
                 href="https://gemini-clone-website.netlify.app"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/Gemini-clone"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -519,7 +519,7 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white">
+          <div class="w-full lg:w-1/2 text-[var(--project-color)]">
             <h3 class="text-3xl font-bold mb-4">Youtube Clone</h3>
             <p class="text-gray-400 mb-4">
               A YouTube clone website frontend is a web interface designed to mimic YouTube's layout and functionality. It includes features such as a dynamic homepage with video thumbnails, a responsive video player,user-friendly navigation and individual video pages with comment sections and related video suggestions. The design focuses on providing a seamless and engaging user experience for browsing and interacting with videocontent
@@ -537,14 +537,14 @@
               <a
                 href="https://youtubecloneweb-site.netlify.app"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/Youtube-clone"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -566,7 +566,7 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white relative left-20">
+          <div class="w-full lg:w-1/2 text-[var(--project-color)] relative left-20">
             <h3 class="text-3xl font-bold mb-4">Portfolio</h3>
             <p class="text-gray-400 mb-4">
               A single-page application developed by using Vite tool with React.js. This project aims to create a lightweight, efficient implementation of the Gemini protocol. The Gemini protocol is a simple, text-based protocol designed for efficient and secure access to information over the internet. This repository provides tools for hosting Gemini content and browsing Gemini sites.
@@ -583,14 +583,14 @@
               <a
                 href="https://gemini-clone-website.netlify.app"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/ecommerce-platform"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -609,7 +609,7 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white relative left-20">
+          <div class="w-full lg:w-1/2 text-[var(--project-color)] relative left-20">
             <h3 class="text-3xl font-bold mb-4">To-Do List</h3>
             <p class="text-gray-400 mb-4">
               The To-Do List App is a simple yet feature-rich web application designed to help users manage their tasks efficiently. It provides a clean and intuitive interface for creating, updating, and organizing tasks.
@@ -627,14 +627,14 @@
               <a
                 href="https://ecommerce-live.com"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/To-Do-List"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -652,7 +652,7 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white">
+          <div class="w-full lg:w-1/2 text-[var(--project-color)]">
             <h3 class="text-3xl font-bold mb-4">Calculator App</h3>
             <p class="text-gray-400 mb-4">
               The Calculator App is a simple yet powerful web application designed to perform basic arithmetic operations. It is built with modern web technologies and provides a clean, user-friendly interface for performing calculations.
@@ -670,14 +670,14 @@
               <a
                 href="https://cryptoTrack-live.com"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/Calculator-App"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -696,7 +696,7 @@
             />
           </div>
           <!-- Project Content -->
-          <div class="w-full lg:w-1/2 text-white relative left-20">
+          <div class="w-full lg:w-1/2 text-[var(--project-color)] relative left-20">
             <h3 class="text-3xl font-bold mb-4">Weather App</h3>
             <p class="text-gray-400 mb-4">
               The Weather App is a responsive web application designed to provide users with real-time weather information for any location. It is built with modern web technologies to ensure a seamless and interactive user experience.
@@ -714,14 +714,14 @@
               <a
                 href="https://weather-app515.netlify.app"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 Go Live
               </a>
               <a
                 href="https://github.com/Ganeshdvp/Weather-App"
                 target="_blank"
-                class="px-4 py-2 border border-white text-white rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
                 GitHub
               </a>
@@ -736,7 +736,7 @@
         <div class="text-center">
           <button
            id="seeMoreButton"
-           class="px-6 py-3 border border-white text-white rounded-lg shadow-lg hover:bg-red-700 transition duration-300 ease-in-out"
+           class="px-6 py-3 border border-[var(--border-color)] text-[var(--see-more-button-color)] rounded-lg shadow-lg hover:bg-red-700 transition hover:text-white duration-300 ease-in-out"
           >
           See More
           </button>
@@ -746,7 +746,7 @@
       <!-- Resume Section -->
       <section id="resume" class="px-40 py-16">
         <!-- Section Heading -->
-        <h2 class="text-4xl font-bold text-white mb-4 text-center">
+        <h2 class="text-4xl font-bold text-[var(--resume-color)] mb-4 text-center">
           My Resume
         </h2>
         <div class="w-24 h-1 bg-red-500 mx-auto mb-12"></div>
@@ -791,14 +791,14 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="px-40 py-16 bg-black relative">
+      <section id="contact" class="px-40 py-16 relative">
         <img
         src="./Images/effectThing.png"
         alt="Hero Background"
-        class="absolute top-0 left-0 w-full h-full object-cover opacity-15 z-0"
+        class="absolute top-0 left-0 w-full h-full object-cover z-0" style="opacity: var(--opacity);"
       />
         <!-- Section Heading -->
-        <h2 class="text-4xl font-bold text-white mb-4 text-center">
+        <h2 class="text-4xl font-bold text-[var(--contact-text-color)] mb-4 text-center">
           Contact Me
         </h2>
         <div class="w-24 h-1 bg-red-500 mx-auto mb-12"></div>
@@ -806,7 +806,7 @@
 
         <!-- Contact Form -->
         <div
-          class="max-w-3xl mx-auto p-8 rounded-lg shadow-lg"
+          class="max-w-3xl mx-auto p-8 rounded-lg"
           data-aos="fade-up"
         >
           <form id="contactForm">
@@ -814,7 +814,7 @@
             <div class="mb-6">
               <label
                 for="name"
-                class="block text-white text-lg font-semibold mb-2"
+                class="block text-[var(--label-color)] text-lg font-semibold mb-2"
                 >Your Name</label
               >
               <input
@@ -822,7 +822,7 @@
                 id="name"
                 name="name"
                 placeholder="Enter your name"
-                class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                class="w-full px-4 py-2 bg-[var(--bg-color)] text-[var(--text-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -831,7 +831,7 @@
             <div class="mb-6">
               <label
                 for="email"
-                class="block text-white text-lg font-semibold mb-2"
+                class="block text-[var(--label-color)] text-lg font-semibold mb-2"
                 >Your Email</label
               >
               <input
@@ -839,7 +839,7 @@
                 id="email"
                 name="email"
                 placeholder="Enter your email"
-                class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                class="w-full px-4 py-2 bg-[var(--bg-color)] text-[var(--text-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               />
             </div>
@@ -848,7 +848,7 @@
             <div class="mb-6">
               <label
                 for="message"
-                class="block text-white text-lg font-semibold mb-2"
+                class="block text-[var(--label-color)] text-lg font-semibold mb-2"
                 >Your Message</label
               >
               <textarea
@@ -856,7 +856,7 @@
                 name="message"
                 rows="5"
                 placeholder="Enter your message"
-                class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+                class="w-full px-4 py-2 bg-[var(--bg-color)] text-[var(--text-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 required
               ></textarea>
             </div>
@@ -875,10 +875,10 @@
       </section>
 
       <!-- Footer Section -->
-      <section id="footer" class="bg-gray-900 py-8">
+      <section id="footer" class="py-8">
         <div class="max-w-6xl mx-auto text-center">
           <!-- Footer Heading -->
-          <h2 class="text-2xl font-bold text-white mb-4">Connect with Me</h2>
+          <h2 class="text-2xl font-bold text-[var(--connect-text-color)] mb-4">Connect with Me</h2>
           <p class="text-gray-400 mb-6">
             Feel free to reach out through any of the platforms below!
           </p>
