@@ -1,6 +1,5 @@
-
- /* Custom animation for the image */
- @keyframes fade-in {
+/* Custom animation for the image */
+@keyframes fade-in {
     0% {
         opacity: 0;
         transform: scale(0.9);
@@ -106,3 +105,301 @@ body.dark {
 
   --connect-text-color: #ffffff;
 }
+
+/* Hamburger and nav links visibility for 600px breakpoint */
+.hamburger-600 {
+  display: none;
+}
+.navlinks-600 {
+  display: flex;
+}
+
+/* loading effect in contact form */
+.loader {
+  border: 2px solid #fff;
+  border-top: 2px solid #ef4444;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .hamburger-600 {
+    display: block;
+  }
+  .navlinks-600 {
+    display: none;
+  }
+  .logo-ganesh {
+    margin-left: 15%;
+  }
+  .hamburger-600{
+    margin-left: 50%;
+  }
+  #hero-page{
+    margin-top: 10%;
+  }
+  .right-section{
+    margin-top: 2%;
+  }
+  .big-circle-1{
+    margin-top: -10%;
+  }
+  .big-circle-2{
+    display: none;
+  }
+  .big-circle-3{
+    display: none;
+  }
+  .border-line-1{
+    display: none;
+  }
+  .skills-section{
+    width: 45%;
+  }
+  .skills-container{
+    margin-left: 0%;
+    width: 100%;
+  }
+  .skills-image{
+    width: 20%;
+    height: 20%;
+  }
+  .about-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .skills-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .experience-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .projects-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .vision-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .goals-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .project-image{
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .hamburger-600 {
+    display: block;
+  }
+  .navlinks-600 {
+    display: none;
+  }
+  .logo-ganesh {
+    margin-left: 15%;
+  }
+  .hamburger-600{
+    margin-left: 50%;
+  }
+  #hero-page{
+    margin-top: 10%;
+  }
+  .right-section{
+    margin-top: 2%;
+  }
+  .big-circle-1{
+    margin-top: -10%;
+  }
+  .big-circle-2{
+    display: none;
+  }
+  .big-circle-3{
+    display: none;
+  }
+  .border-line-1{
+    display: none;
+  }
+  .skills-section{
+    width: 45%;
+  }
+  .skills-container{
+    margin-left: 0%;
+    width: 100%;
+  }
+  .skills-image{
+    width: 20%;
+    height: 20%;
+  }
+  .about-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .skills-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .experience-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .projects-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .vision-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .goals-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .project-image{
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo-ganesh {
+    margin-left: 15%;
+  }
+  .navLinks{
+    margin-right: -100px;
+  }
+  #hero-page{
+    margin-top: 10%;
+  }
+  .right-section{
+    margin-top: 2%;
+  }
+  .big-circle-1{
+    margin-top: -10%;
+  }
+  .big-circle-2{
+    display: none;
+  }
+  .big-circle-3{
+    display: none;
+  }
+  .border-line-1{
+    display: none;
+  }
+  .skills-section{
+    width: 45%;
+  }
+  .skills-container{
+    margin-left: 0%;
+    width: 100%;
+  }
+  .skills-image{
+    width: 20%;
+    height: 20%;
+  }
+  .about-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .skills-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .experience-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .projects-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .vision-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .goals-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .project-image{
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1245px) {
+  #hero-page{
+    margin-top: 5%;
+  }
+  .right-section{
+    margin-top: 2%;
+  }
+  .big-circle-1{
+    margin-top: -10%;
+  }
+  .big-circle-2{
+    display: none;
+  }
+  .big-circle-3{
+    display: none;
+  }
+  .border-line-1{
+    display: none;
+  }
+  .skills-section{
+    width: 45%;
+  }
+  .skills-container{
+    margin-left: 0%;
+    width: 100%;
+  }
+  .skills-image{
+    width: 20%;
+    height: 20%;
+  }
+  .about-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .skills-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .experience-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .projects-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .vision-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .goals-heading{
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+  .project-image{
+    position: relative;
+    left: 0%;
+  }
+}
+

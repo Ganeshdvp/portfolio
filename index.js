@@ -3,6 +3,65 @@ AOS.init({
   once: true, // Whether animation should happen only once
 });
 
+// Hamburger menu toggle for <600px
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuButton = document.getElementById('mobileMenuButton');
+  const navLinks = document.getElementById('navLinks');
+  const navLis = navLinks.querySelectorAll('li');
+  
+  function closeMenu() {
+    navLinks.style.display = 'none';
+  }
+
+  mobileMenuButton.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (navLinks.style.display === 'flex') {
+      closeMenu();
+    } else {
+      navLinks.style.display = 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.position = 'absolute';
+      navLinks.style.top = '80px';
+      navLinks.style.left = '0';
+      navLinks.style.width = '100%';
+      navLinks.style.background = 'black';
+      navLinks.style.zIndex = '50';
+      navLinks.style.padding = '1rem';
+    }
+  });
+
+  navLis.forEach(li => {
+    li.addEventListener('click', function() {
+      // Only close if on mobile
+      if (window.innerWidth <= 600) closeMenu();
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth > 600) return;
+    if (!navLinks.contains(e.target) && e.target !== mobileMenuButton) {
+      closeMenu();
+    }
+  });
+
+  // Hide navLinks on resize above 600px
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 600) {
+      navLinks.style.display = '';
+      navLinks.style.flexDirection = '';
+      navLinks.style.position = '';
+      navLinks.style.top = '';
+      navLinks.style.left = '';
+      navLinks.style.width = '';
+      navLinks.style.background = '';
+      navLinks.style.zIndex = '';
+      navLinks.style.padding = '';
+    }
+  });
+});
+
+
+
 // JavaScript to toggle the dropdown
 const themeToggle = document.getElementById("themeToggle");
 const dropdown = document.getElementById("dropdown");
@@ -79,42 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// my practices
-document.addEventListener("DOMContentLoaded", () => {
-  const carouselInner = document.getElementById("carouselInner");
-  const prevArrow = document.getElementById("prevArrow");
-  const nextArrow = document.getElementById("nextArrow");
-
-  let currentIndex = 0; // Track the current item index
-  const items = carouselInner.children; // Get all carousel items
-  const itemWidth = items[0].offsetWidth + 16; // Width of a single item (including margin)
-  const visibleItems = Math.floor(carouselInner.parentElement.offsetWidth / itemWidth); // Number of visible items
-  const maxIndex = items.length - visibleItems; // Maximum index to prevent extra space
-
-  // Move to the previous item
-  prevArrow.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
-    }
-  });
-
-  // Move to the next item
-  nextArrow.addEventListener("click", () => {
-    if (currentIndex < maxIndex) {
-      currentIndex++;
-      updateCarousel();
-    }
-  });
-
-  // Update the carousel position
-  function updateCarousel() {
-    const offset = currentIndex * -itemWidth;
-    carouselInner.style.transform = `translateX(${offset}px)`;
-    carouselInner.style.transition = "transform 0.5s ease-in-out"; // Smooth transition
-  }
-});
-
 // see more
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize AOS
@@ -143,13 +166,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// contact form 
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.getElementById("contactForm");
-  const successPopup = document.getElementById("successPopup");
+  const sendBtn = document.getElementById("sendBtn");
 
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    // Show loading effect
+    sendBtn.disabled = true;
+    sendBtn.innerHTML = `<span class="loader"></span> Sending...`;
 
     const formData = new FormData(contactForm);
     const data = {
@@ -167,18 +194,21 @@ document.addEventListener("DOMContentLoaded", () => {
         body: JSON.stringify(data),
       });
 
+      // Restore button
+      sendBtn.disabled = false;
+      sendBtn.innerHTML = "Send Message";
+
       if (response.ok) {
-        successPopup.classList.remove("hidden");
-        setTimeout(() => {
-          successPopup.classList.add("hidden");
-        }, 3000); // Hide popup after 3 seconds
-        contactForm.reset(); // Reset the form
+        alert("Message sent successfully!");
+        contactForm.reset();
       } else {
         alert("Failed to send message. Please try again.");
       }
     } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again later.");
+      // Restore button
+      sendBtn.disabled = false;
+      sendBtn.innerHTML = "Send Message";
+      alert("An error occurred. Please try again.");
     }
   });
 });
