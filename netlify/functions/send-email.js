@@ -28,8 +28,9 @@ exports.handler = async (event) => {
     });
 
     const mailOptions = {
-      from: email,
+      from: process.env.MY_GMAIL,
       to: process.env.MY_GMAIL,
+      replyTo: email,
       subject: `PORTFOLIO Contact form from ${name}`,
       text: message,
     };
