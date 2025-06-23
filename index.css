@@ -131,7 +131,16 @@ body.dark {
   100% { transform: rotate(360deg);}
 }
 
-
+/* Autofill background and text color fix for dark mode */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #222 inset !important;
+  box-shadow: 0 0 0 1000px #222 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 @media screen and (max-width: 600px) {
   .hamburger-600 {
