@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@cloudinary/url-gen": "^1.22.0",
     "@heroicons/react": "^2.2.0",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",

@@ -213,6 +213,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-
