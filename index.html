@@ -18,7 +18,7 @@
 
     <!-- navbar -->
     <nav
-      class="bg-transparent w-full flex justify-between items-center py-16 px-8 h-20 z-50"
+      class="bg-transparent w-full flex justify-between items-center py-10 px-8 mb-5 h-20 z-100"
     >
       <a href="#"><h1 class="logo-ganesh text-4xl text-red-500 ms-32 light:text-white-300" style="font-family: 'Irish Grover', cursive;">Ganesh</h1></a>
       <div class="navLinks flex items-center gap-8">
@@ -27,12 +27,12 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
         </button>
         <!-- Nav Links -->
-        <ul id="navLinks" class="navlinks-600 flex items-center text-md gap-8 text-[var(--tags-color)]" style="font-family: Arvo;">
-          <a href="#"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out">Home</li></a>
-          <a href="#about"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out">About</li></a>
-          <a href="#projects"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out">Projects</li></a>
-          <a href="#resume"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out">Resume</li></a>
-          <a href="#contact"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out">Contact</li></a>
+        <ul id="navLinks" class="navlinks-600 flex items-center text-md gap-8 text-[var(--tags-color)] p-2" style="font-family: Arvo;">
+          <a href="#"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out p-2">Home</li></a>
+          <a href="#about"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out p-2">About</li></a>
+          <a href="#projects"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out p-2">Projects</li></a>
+          <a href="#resume"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out p-2">Resume</li></a>
+          <a href="#contact"><li class="hover:-translate-y-1 hover:text-red-500 transform transition duration-300 ease-in-out p-2">Contact</li></a>
           <div class="relative ml-4 flex rounded-[20px] px-3 bg-red-700 text-white hover:brightness-150 hover:shadow-[0_0_10px_3px_rgba(255,0,0,0.8)] focus:outline-none focus:ring-1 focus:ring-red-400 w-40">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@
       class="absolute top-0 left-0 w-screen max-w-full h-full object-cover z-0" style="opacity: var(--opacity);"
     />
         <!-- Left Side: Text Content -->
-        <div class="w-full lg:w-1/2 animate-fade-in text-center lg:text-left pt-8 lg:pt-0">
+        <div class="w-full lg:w-1/2 animate-fade-in text-center lg:text-left pt-8 lg:pt-30">
           <h1
             class="text-3xl sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300 mb-6" style="font-family: Arvo;"
           >
@@ -115,7 +115,7 @@
         </div>
 
         <!-- Right Side: Image with Animation -->
-        <div class="right-section w-full lg:w-1/2 flex justify-center relative mt-8 lg:mt-0" id="right-side">
+        <div class="right-section w-full lg:w-1/2 flex justify-center relative mt-8 lg:mt-0 -z-20" id="right-side">
           <!-- Background Image -->
           <img
             src="./Images/Ellipse 1.webp"
@@ -167,14 +167,14 @@
             <img
             src="./Images/borderLine.webp"
             alt="Background"
-            class="border-line-1 absolute -top-12 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
+            class="border-line-1 absolute -top-23 -left-6 w-[280px] h-full object-cover opacity-80 z-0" style="filter: var(--borderLine-filter);"
           />
             <h2 class="about-heading text-2xl text-[var(--about-text-color)] mb-8 ms-12" style="font-family: Irish Grover;">About Me</h2>
             <p class="text-md text-gray-400 leading-snug" >
               I am a Front-End Developer with a passion for creating visually
               appealing and user-friendly web applications. My expertise lies in
               crafting responsive designs and delivering seamless user
-              experiences.
+              experiences. From 2023–2025, dedicated short-time to self-learning through YouTube, documentation, and AI tools, gaining strong hands-on experience in modern frontend development, cloud deployment, and performance optimization. Seeking an opportunity to contribute to real-world products and deliver scalable, user-centric UI solutions.
             </p>
           </div>
           <!-- Right Side: Image -->
@@ -202,8 +202,7 @@
           />
             <h2 class="skills-heading text-2xl text-[var(--about-text-color)] mb-7 ms-12" style="font-family: Irish Grover;">My Skills</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
-              I specialize in HTML5, CSS3, JavaScript, and frameworks like React
-              and Tailwind CSS. I have basic understanding in NodeJS, ExpressJS and MySql. I love solving complex problems and turning
+              I specialize in HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, ReactJS, Redux Toolkit, Axios, NodeJS, ExpressJS and Databases like MySQL, MongoDB(Familiar). I love solving complex problems and turning
               ideas into functional, beautiful designs.
             </p>
           </div>
@@ -233,6 +232,12 @@
                 loading="lazy"
                 alt="React"
                 class="skills-image w-20 h-16 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
+              />
+              <img
+                src="./Images/redux.png"
+                loading="lazy"
+                alt="Redux-logo"
+                class="skills-image w-15 h-13 object-contain rounded-full transform transition duration-500 ease-in-out hover:scale-105"
               />
               <img
                 src="./Images/tailwind.webp"
@@ -323,7 +328,7 @@
           />
             <h2 class="projects-heading text-2xl text-[var(--about-text-color)] mb-10 ms-12" style="font-family: Irish Grover;">My Projects</h2>
             <p class="text-md text-gray-400 leading-snug" style="font-family: Josefin Slab;">
-              I have built various projects, including Crypto currency tracking,
+              I have built various projects, including Movie streaming, Crypto currency tracking,
               portfolio websites, Interactive websites and Ai-Powered based websites. Each project
               reflects my dedication to delivering exceptional user experiences.
             </p>
@@ -412,8 +417,57 @@
         <div class="w-24 h-1 bg-red-500 mx-auto mb-28"></div>
       
        <div id="visibleProjects">
-        <!-- Project 1 -->
+        <!-- project 1 -->
         <div class="flex flex-col lg:flex-row items-center gap-12 mb-46" data-aos="fade-right">
+          <!-- Project Image -->
+          <div class="w-full lg:w-1/2">
+            <img
+              src="./Images/hyperFlix.png"
+              loading="lazy"
+              alt="CryptoTrack"
+              class="project-image w-[500px] relative left-20 rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
+            />
+          </div>
+          <!-- Project Content -->
+          <div class="w-full lg:w-1/2 text-[var(--text-color)]">
+            <h3 class="text-3xl font-bold mb-4">HyperFlix</h3>
+            <p class="text-gray-400 mb-4">
+              Developed a fully responsive movie streaming web application with dynamic movie listing and search functionality. Implemented Firebase authentication. Form validations using Formik and used Redux and Axios. Enabled multi-language support and deployed on Cloudflare for high availability.
+            </p>
+            <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
+            <ul class="list-disc list-inside text-gray-400 mb-4">
+              <li>Displayed dynamic movie lists and implemented real-time search functionality.</li>
+              <li>Integrated Firebase authentication for user login and registration.</li>
+              <li>Implemented form validations using Formik for improved user input accuracy.</li>
+              <li>Ensured responsive design compatible with multiple devices and screen sizes.</li>
+              <li>Optimized API calls using Redux for state management and caching.</li>
+              <li>Enhanced accessibility, SEO, and best practices compliance.</li>
+              <li>Deployed on Cloudflare for global performance and reliability.</li>
+              <li>Tech Stack:- ReactJS, Redux Toolkit, Axios, Firebase, Cloudflare.</li>
+            </ul>
+            <!-- Buttons -->
+            <div class="flex gap-4">
+              <a
+                href="https://hyperflix-5h8.pages.dev/"
+                target="_blank"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+              >
+                Go Live
+              </a>
+              <a
+                href="https://github.com/Ganeshdvp/HyperFlix.git"
+                target="_blank"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-46" data-aos="fade-right">
           <!-- Project Image -->
           <div class="w-full lg:w-1/2">
             <img
@@ -427,20 +481,22 @@
           <div class="w-full lg:w-1/2 text-[var(--text-color)]">
             <h3 class="text-3xl font-bold mb-4">CryptoTrack</h3>
             <p class="text-gray-400 mb-4">
-              It offers a user-friendly interface to view real-time coin prices, track investments, and visualize portfolio performance through charts and graphs. This project utilizes APIs to fetch live data and includes responsive design for seamless usage across devices.
+               Developed a fully responsive Coins tracking web application with dynamic coins listing and search functionality. It offers a user-friendly interface to view real-time coin prices, track investments, and visualize portfolio performance through charts. This project utilizes APIs to fetch live data and includes responsive design for seamless usage across devices.
             </p>
             <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
             <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>Real-time cryptocurrency price tracking</li>
+              <li>Displayed dynamic coins data and implemented real-time search functionality.</li>
               <li>Interactive portfolio performance charts</li>
-              <li>Added Login form by using Formik</li>
-              <li>Responsive design for all devices</li>
-              <li>Made by using HTML5, CSS3, JavaScript, ReactJS and Charts.js</li>
+              <li>Implemented form validations using Formik for improved user input accuracy.</li>
+              <li>Ensured responsive design compatible with multiple devices and screen sizes.</li>
+              <li>Enhanced accessibility, SEO, and best practices compliance.</li>
+              <li>Deployed on Netflify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3, JavaScript, ReactJS and Charts.js</li>
             </ul>
             <!-- Buttons -->
             <div class="flex gap-4">
               <a
-                href="https://cryptotrackweb.netlify.app"
+                href="https://crypto-track515.netlify.app/"
                 target="_blank"
                 class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
@@ -448,51 +504,6 @@
               </a>
               <a
                 href="https://github.com/Ganeshdvp/Crypto-Track"
-                target="_blank"
-                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      
-        <!-- Project 2 -->
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-46" data-aos="fade-left">
-          <!-- Project Image -->
-          <div class="w-full lg:w-1/2">
-            <img
-              src="./Images/Go-Chat-Ai.webp"
-              loading="lazy"
-              alt="E-Commerce Platform"
-              class="project-image w-[500px] relative -right-32 shadow-lg transform transition duration-500 hover:scale-105"
-            />
-          </div>
-          <!-- Project Content -->
-          <div class="project-image w-full lg:w-1/2 text-[var(--text-color)] relative left-20">
-            <h3 class="text-3xl font-bold mb-4 text-[var(--project-color)]">GO-CHAT-AI</h3>
-            <p class="text-gray-400 mb-4">
-              Developed a single-page application by using Vite tool with React.js and integrated the Gemini API for real-time conversational capabilities. Focused on responsive UI design, optimized rendering, and seamless user interactions.
-            </p>
-            <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
-            <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>Users can give prompt and get response instantly</li>
-              <li>Displays recent chats</li>
-              <li>Added SignUp and SignIn forms by using Formik</li>
-              <li>Responsive design for all devices</li>
-              <li>Made by using HTML5, CSS3, JavaScript and ReactJS</li>
-            </ul>
-            <!-- Buttons -->
-            <div class="flex gap-4">
-              <a
-                href="https://go-chat-ai.netlify.app/"
-                target="_blank"
-                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
-              >
-                Go Live
-              </a>
-              <a
-                href="https://github.com/Ganeshdvp/Gemini-clone"
                 target="_blank"
                 class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
               >
@@ -517,15 +528,17 @@
           <div class="w-full lg:w-1/2 text-[var(--project-color)]">
             <h3 class="text-3xl font-bold mb-4">Watch Time</h3>
             <p class="text-gray-400 mb-4">
-              Developed a YouTube-like video streaming platform using React and Vite, integrating the YouTube API to fetch and display real-time videos, channels, and search results. Designed a responsive UI for smooth user experience.
+              Developed a fully responsive YouTube-like video streaming platform featuring dynamic movie listings, real-time search functionality, and seamless integration with the YouTube Data API to fetch and display videos, channels, and search results.
             </p>
             <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
             <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>Displays recommended videos, likes, comments and views counts.</li>
-              <li>Users can search videos whatever they want.</li>
-              <li>Responsive Video player for watching videos and added controls too.</li>
-              <li>Fully Responsive design for all devices</li>
-              <li>Made by using HTML5, CSS3, JavaScript, ReactJS and moment.js</li>
+              <li>Displayed dynamic movie listings and implemented real-time search functionality.</li>
+              <li> Applied debounced search with Redux caching to reduce API calls</li>
+              <li>Implemented form validations using Formik for improved user input accuracy.</li>
+              <li>Ensured responsive design compatible with multiple devices and screen sizes.</li>
+              <li>Enhanced accessibility, SEO, and best practices compliance.</li>
+              <li>Deployed on Netlify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3, JavaScript, ReactJS and moment.js</li>
             </ul>
             <!-- Buttons -->
             <div class="flex gap-4">
@@ -546,12 +559,58 @@
             </div>
           </div>
         </div>
-       </div>
-
-       <div id="hiddenProjects" class="hidden">
 
         <!-- Project 4 -->
         <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-46" data-aos="fade-left">
+          <!-- Project Image -->
+          <div class="w-full lg:w-1/2">
+            <img
+              src="./Images/Go-Chat-Ai.webp"
+              loading="lazy"
+              alt="E-Commerce Platform"
+              class="project-image w-[500px] relative -right-32 shadow-lg transform transition duration-500 hover:scale-105"
+            />
+          </div>
+          <!-- Project Content -->
+          <div class="project-image w-full lg:w-1/2 text-[var(--text-color)] relative left-20">
+            <h3 class="text-3xl font-bold mb-4 text-[var(--project-color)]">GO-CHAT-AI</h3>
+            <p class="text-gray-400 mb-4">
+              Developed a single-page application by using Vite tool with React.js and integrated the Gemini API for real-time conversational capabilities. Focused on responsive UI design, optimized rendering, and seamless user interactions.
+            </p>
+            <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
+            <ul class="list-disc list-inside text-gray-400 mb-4">
+              <li>Users can give prompt and get response instantly</li>
+              <li>Displays recent chats, new Chat and delete chats</li>
+               <li>Implemented form validations using Formik for improved user input accuracy.</li>
+              <li>Ensured responsive design compatible with multiple devices and screen sizes.</li>
+              <li>Enhanced accessibility, SEO, and best practices compliance.</li>
+              <li>Deployed on Netlify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3, JavaScript, and ReactJS</li>
+            </ul>
+            <!-- Buttons -->
+            <div class="flex gap-4">
+              <a
+                href="https://go-chat-ai.netlify.app/"
+                target="_blank"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+              >
+                Go Live
+              </a>
+              <a
+                href="https://github.com/Ganeshdvp/Gemini-clone"
+                target="_blank"
+                class="px-4 py-2 border border-[var(--border-color)] text-[var(--live-text-color)] rounded-3xl shadow-lg hover:-translate-y-1 duration-300 ease-in-out"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <div id="hiddenProjects" class="hidden">
+        <!-- Project 5 -->
+        <div class="flex flex-col lg:flex-row items-center gap-12 mb-46" data-aos="fade-left">
           <!-- Project Image -->
           <div class="w-full lg:w-1/2">
             <img
@@ -569,10 +628,12 @@
             </p>
             <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
             <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>Clean and attractive portfolio</li>
-              <li>Added themes</li>
-              <li>Responsive design for all devices</li>
-              <li>Made by using HTML5, CSS3, JavaScript and Tailwind CSS</li>
+              <li>Designed a clean and visually appealing portfolio interface</li>
+              <li>Implemented light/dark theme support for enhanced user experience</li>
+              <li>Ensured responsive design compatible with multiple devices and screen sizes.</li>
+              <li>Enhanced accessibility, SEO, and best practices compliance.</li>
+              <li>Deployed on Netlify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3, JavaScript and Tailwind CSS</li>
             </ul>
             <!-- Buttons -->
             <div class="flex gap-4">
@@ -594,8 +655,8 @@
           </div>
         </div>
 
-         <!-- Project 5 -->
-         <div class="flex flex-col lg:flex-row items-center gap-12 mb-25" data-aos="fade-left">
+         <!-- Project 6 -->
+         <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-25" data-aos="fade-left">
           <!-- Project Image -->
           <div class="w-full lg:w-1/2">
             <img
@@ -609,15 +670,17 @@
           <div class="project-image w-full lg:w-1/2 text-[var(--project-color)] relative left-20">
             <h3 class="text-3xl font-bold mb-4">To-Do List</h3>
             <p class="text-gray-400 mb-4">
-              The To-Do List App is a simple yet feature-rich web application designed to help users manage their tasks efficiently. It provides a clean and intuitive interface for creating, updating, and organizing tasks.
+              A simple yet feature-rich task management application designed with a clean and intuitive UI. It enables users to efficiently create, update, and organize their daily tasks across all devices.
             </p>
             <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
             <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>CRUD Operations</li>
-              <li>Used Session storage to store temporary data</li>
-              <li>Fully Responsive design for all devices</li>
-              <li>Added themes which is Dark and Light and SEO Friendly</li>
-              <li>Made by using HTML5, CSS3 and JavaScript</li>
+              <li>Full CRUD operations for managing tasks</li>
+              <li>Session Storage integration to store temporary task data</li>
+              <li>Fully responsive design optimized for all screen sizes</li>
+              <li>Light & Dark theme support for improved user experience</li>
+              <li>SEO-friendly structure</li>
+              <li>Deployed on Netlify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3 and JavaScript</li>
             </ul>
             <!-- Buttons -->
             <div class="flex gap-4">
@@ -638,8 +701,9 @@
             </div>
           </div>
         </div>
-        <!-- Project 6 -->
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-25" data-aos="fade-right">
+
+        <!-- Project 7 -->
+        <div class="flex flex-col lg:flex-row items-center gap-12 mb-25" data-aos="fade-right">
           <!-- Project Image -->
           <div class="w-full lg:w-1/2">
             <img
@@ -653,15 +717,17 @@
           <div class="w-full lg:w-1/2 text-[var(--project-color)]">
             <h3 class="text-3xl font-bold mb-4">Calculator App</h3>
             <p class="text-gray-400 mb-4">
-              The Calculator App is a simple yet powerful web application designed to perform basic arithmetic operations. It is built with modern web technologies and provides a clean, user-friendly interface for performing calculations.
+              A simple yet powerful web-based calculator designed to perform basic arithmetic operations with accuracy and ease. It features a clean, user-friendly interface and is built using modern web technologies.
             </p>
             <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
             <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>Fully Responsive design for all devices</li>
-              <li>History of previouse calculations</li>
-              <li>Handling invalid expressions by using try and catch</li>
-              <li>Event delegation and using eval() to evaluate expressions</li>
-              <li>Made by using HTML5, CSS3 and JavaScript</li>
+              <li>Fully responsive design optimized for all device sizes</li>
+              <li>Calculation history to view previously executed expressions</li>
+              <li>Error handling using try and catch to manage invalid expressions</li>
+              <li>Efficient event handling through event delegation</li>
+              <li>Utilizes eval() for evaluating mathematical expressions</li>
+              <li>Deployed on Netlify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3 and JavaScript</li>
             </ul>
             <!-- Buttons -->
             <div class="flex gap-4">
@@ -683,8 +749,8 @@
           </div>
         </div>
 
-         <!-- Project 7 -->
-         <div class="flex flex-col lg:flex-row items-center gap-12 mb-25" data-aos="fade-left">
+         <!-- Project 8 -->
+         <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-25" data-aos="fade-left">
           <!-- Project Image -->
           <div class="w-full lg:w-1/2">
             <img
@@ -698,15 +764,16 @@
           <div class="project-image w-full lg:w-1/2 text-[var(--project-color)] relative left-20">
             <h3 class="text-3xl font-bold mb-4">Weather App</h3>
             <p class="text-gray-400 mb-4">
-              The Weather App is a responsive web application designed to provide users with real-time weather information for any location. It is built with modern web technologies to ensure a seamless and interactive user experience.
+             A fully responsive web application that delivers real-time weather information for any location worldwide. Designed with modern web technologies to ensure fast performance and a smooth, interactive user experience.
             </p>
             <h4 class="text-xl font-semibold mb-2">Key Features:</h4>
             <ul class="list-disc list-inside text-gray-400 mb-4">
-              <li>Optimizing the performance by using memoized function</li>
-              <li>Optimizing the performance by using Debounce technique</li>
-              <li>Advance level of fetching data by using Async Await</li>
+              <li>Performance optimization using memoized functions</li>
+              <li>Reduced API calls with an efficient debounce search mechanism</li>
+              <li>Advanced data fetching implemented using Async/Await</li>
               <li>Fully Responsive design for mobile and desktop screens</li>
-              <li>Made by using HTML5, CSS3 and JavaScript</li>
+              <li>Deployed on Netlify for global performance and reliability.</li>
+              <li>Tech Stack:- HTML5, CSS3 and JavaScript</li>
             </ul>
             <!-- Buttons -->
             <div class="flex gap-4">
@@ -780,7 +847,7 @@
               projects.
             </p>
             <a
-              href="./public/Ganesh_Frontend_Resume -2.pdf"
+              href="./public/Ganesh_Frontend_Resume (4).pdf"
               download
               class="px-8 py-3 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 hover:shadow-[0_0_15px_3px_rgba(255,0,0,0.8)] transition duration-300 ease-in-out"
             >

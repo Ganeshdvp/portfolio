@@ -104,11 +104,17 @@ const skills = [
   "CSS3",
   "JavaScript",
   "React",
+  "Redux Toolkit",
   "Tailwind CSS",
+  "Axios",
   "Bootstrap",
   "NodeJS",
   "ExpressJS",
+  "REST API's",
   "MySql",
+  "MangoDB(Familiar)",
+  "Cloudflare",
+  "Firebase"
 ];
 let skillIndex = 0;
 let charIndex = 0;
