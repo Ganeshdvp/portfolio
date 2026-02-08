@@ -107,6 +107,7 @@ const skills = [
   "Redux Toolkit",
   "Tailwind CSS",
   "Axios",
+  "Tenstack query",
   "Bootstrap",
   "NodeJS",
   "ExpressJS",
